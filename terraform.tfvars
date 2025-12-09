@@ -1,7 +1,7 @@
 # terraform.tfvars
 resource_group_name = "example-rg-keyvault-prod"
 location            = "EastUS"
-key_vault_name      = "my-key-vault-test1" # Changed key vault name
+key_vault_name      = "my-key-vault-test2" # Changed key vault name
 tenant_id           = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" # Replace with your Azure Tenant ID
 
 # Optional variables (uncomment and modify if you want to override defaults)
