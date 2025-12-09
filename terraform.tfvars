@@ -1,13 +1,15 @@
-resource_group_name = "rg-security-prod"
-location            = "westeurope"
-key_vault_name      = "test-kva"
-tenant_id           = "f8cdef31-a31e-4b4a-93e4-5f571e91255a"
-sku_name            = "standard"
-allowed_ip_addresses = ["10.0.0.0/24"]
-purge_protection_enabled = true
-soft_delete_retention_days = 7
+# terraform.tfvars
+resource_group_name = "example-rg-keyvault-prod"
+location            = "EastUS"
+key_vault_name      = "my-key-vault-test" # Changed key vault name
+tenant_id           = "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx" # Replace with your Azure Tenant ID
 
-tags = {
-  Environment = "Production"
-  Project     = "Security"
-}
+# Optional variables (uncomment and modify if you want to override defaults)
+# sku_name                     = "premium"
+# enabled_for_disk_encryption  = true
+# purge_protection_enabled     = true
+# allowed_ip_addresses         = ["203.0.113.45/32", "192.0.2.0/24"]
+# tags = {
+#   Environment = "Production"
+#   Project     = "KeyVaultDemo"
+# }
