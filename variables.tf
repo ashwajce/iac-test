@@ -11,6 +11,7 @@ variable "location" {
 variable "key_vault_name" {
   description = "The name of the Azure Key Vault. Must be globally unique."
   type        = string
+  default     = "iac-test1" # Modified: Added default value as requested
 }
 
 variable "tenant_id" {
