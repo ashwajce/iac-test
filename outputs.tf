@@ -34,3 +34,14 @@ output "new_storage_account_primary_access_key" {
   value       = azurerm_storage_account.secondary.primary_access_key
   sensitive   = true
 }
+
+output "tertiary_storage_account_id" {
+  description = "The ID of the tertiary Azure Storage Account."
+  value       = azurerm_storage_account.tertiary.id
+}
+
+output "tertiary_storage_account_primary_access_key" {
+  description = "The primary access key for the tertiary Azure Storage Account."
+  value       = azurerm_storage_account.tertiary.primary_access_key
+  sensitive   = true
+}
