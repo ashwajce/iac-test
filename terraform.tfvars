@@ -1,0 +1,5 @@
+key_vault_name           = "test-dev"
+resource_group_name      = "ashwa-test"
+region                   = "westeurope"
+sku_name                 = "standard"
+initial_access_object_id = "sdfsdf"
