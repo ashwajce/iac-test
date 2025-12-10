@@ -3,3 +3,8 @@ resource_group_name      = "ashwa-test"
 region                   = "westeurope"
 sku_name                 = "standard"
 initial_access_object_id = "sdfsdf"
+
+storage_account_name             = "test"
+storage_account_tier             = "Standard"
+storage_account_replication_type = "GRS"
+storage_account_kind             = "StorageV2"
