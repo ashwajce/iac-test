@@ -115,3 +115,22 @@ resource "azurerm_storage_account" "secondary" {
     }
   }
 }
+
+resource "azurerm_storage_account" "tertiary" {
+  name                     = var.tertiary_storage_account_name
+  resource_group_name      = azurerm_resource_group.kv_rg.name
+  location                 = azurerm_resource_group.kv_rg.location
+  account_tier             = var.tertiary_storage_account_tier
+  account_replication_type = var.tertiary_storage_account_replication_type
+  account_kind             = var.tertiary_storage_account_kind
+
+  # Enforce HTTPS traffic only for security best practice
+  enable_https_traffic_only = true
+
+  # Optional: Enable blob soft delete
+  blob_properties {
+    delete_retention_policy {
+      days = 7
+    }
+  }
+}
