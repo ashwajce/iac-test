@@ -70,3 +70,26 @@ variable "new_storage_account_kind" {
   type        = string
   default     = "StorageV2"
 }
+
+variable "tertiary_storage_account_name" {
+  description = "A globally unique name for the tertiary Azure Storage Account (must be 3-24 characters, lowercase letters and numbers only)."
+  type        = string
+}
+
+variable "tertiary_storage_account_tier" {
+  description = "The pricing tier for the tertiary Storage Account (e.g., Standard, Premium)."
+  type        = string
+  default     = "Standard"
+}
+
+variable "tertiary_storage_account_replication_type" {
+  description = "The replication strategy for the tertiary Storage Account (e.g., LRS, GRS, ZRS, RAGRS, GZRS, RAZRS)."
+  type        = string
+  default     = "GRS"
+}
+
+variable "tertiary_storage_account_kind" {
+  description = "The kind of Storage Account to create (e.g., StorageV2, BlobStorage, BlockBlobStorage, FileStorage)."
+  type        = string
+  default     = "StorageV2"
+}
