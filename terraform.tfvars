@@ -13,3 +13,7 @@ new_storage_account_name             = "new-sa"
 new_storage_account_tier             = "Standard"
 new_storage_account_replication_type = "GRS"
 new_storage_account_kind             = "StorageV2"
+
+new_key_vault_name                     = "test123"
+new_key_vault_sku_name                 = "premium"
+new_key_vault_initial_access_object_id = "dfdsf"
