@@ -13,3 +13,8 @@ new_storage_account_name             = "new-sa"
 new_storage_account_tier             = "Standard"
 new_storage_account_replication_type = "GRS"
 new_storage_account_kind             = "StorageV2"
+
+third_storage_account_name             = "test-ashwa"
+third_storage_account_tier             = "Standard"
+third_storage_account_replication_type = "GRS"
+third_storage_account_kind             = "StorageV2"
