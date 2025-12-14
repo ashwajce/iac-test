@@ -8,6 +8,16 @@ output "key_vault_uri" {
   value       = azurerm_key_vault.main.vault_uri
 }
 
+output "secondary_key_vault_id" {
+  description = "The ID of the secondary Azure Key Vault."
+  value       = azurerm_key_vault.secondary.id
+}
+
+output "secondary_key_vault_uri" {
+  description = "The URI of the secondary Azure Key Vault."
+  value       = azurerm_key_vault.secondary.vault_uri
+}
+
 output "resource_group_name" {
   description = "The name of the Resource Group where the Key Vault is created."
   value       = azurerm_resource_group.kv_rg.name
