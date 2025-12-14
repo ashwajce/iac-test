@@ -25,6 +25,22 @@ variable "initial_access_object_id" {
   type        = string
 }
 
+variable "secondary_key_vault_name" {
+  description = "A globally unique name for the secondary Azure Key Vault."
+  type        = string
+}
+
+variable "secondary_key_vault_sku_name" {
+  description = "The pricing tier for the secondary Key Vault (Standard or Premium)."
+  type        = string
+  default     = "standard"
+}
+
+variable "secondary_initial_access_object_id" {
+  description = "The Azure AD Object ID (User, Group, or Service Principal) to grant initial access policies for the secondary Key Vault."
+  type        = string
+}
+
 variable "storage_account_name" {
   description = "A globally unique name for the Azure Storage Account (must be 3-24 characters, lowercase letters and numbers only)."
   type        = string
