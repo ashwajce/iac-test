@@ -13,3 +13,6 @@ new_storage_account_name             = "new-sa"
 new_storage_account_tier             = "Standard"
 new_storage_account_replication_type = "GRS"
 new_storage_account_kind             = "StorageV2"
+
+new_key_vault_name                   = "test-key"
+new_key_vault_initial_access_object_id = "jksdhkfjhdsf"
