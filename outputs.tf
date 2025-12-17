@@ -34,3 +34,13 @@ output "new_storage_account_primary_access_key" {
   value       = azurerm_storage_account.secondary.primary_access_key
   sensitive   = true
 }
+
+output "new_key_vault_id" {
+  description = "The ID of the new Azure Key Vault."
+  value       = azurerm_key_vault.secondary.id
+}
+
+output "new_key_vault_uri" {
+  description = "The URI of the new Azure Key Vault."
+  value       = azurerm_key_vault.secondary.vault_uri
+}
