@@ -13,3 +13,7 @@ new_storage_account_name             = "new-sa"
 new_storage_account_tier             = "Standard"
 new_storage_account_replication_type = "GRS"
 new_storage_account_kind             = "StorageV2"
+
+new_key_vault_name           = "ashwa-akv"
+new_sku_name                 = "standard"
+new_initial_access_object_id = "dsfsfsdfsdf"
